@@ -7,7 +7,6 @@ import BlankCards from "./components/BlankCards";
 import SlidingElements from "./components/SlidingElements";
 import InfoGrid from "./components/InfoGrid";
 import ShadCN from "./components/ShadCN";
-import Cursor from "react-cursor-follow";
 import Experience from "./components/Experience";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Skills from "./components/Skills";

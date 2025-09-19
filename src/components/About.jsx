@@ -1,6 +1,5 @@
 import React from "react";
 import { Linkedin, Github } from "lucide-react";
-import Cursor from "react-cursor-follow";
 import GalaxyBackground from "./GalaxyBackground";
 
 const About = () => {

@@ -9,7 +9,7 @@ const BlogsSection = () => {
       title: "Building Scalable REST APIs with Spring Boot",
       excerpt:
         "Learn how to design and implement robust REST APIs using Spring Boot, including best practices for authentication, validation, and error handling that ensure your backend can scale efficiently.",
-      image: "public/images/Gemini_Generated_Image_8kotyh8kotyh8kot.png",
+      image: "/images/Gemini_Generated_Image_8kotyh8kotyh8kot.png",
       date: "2025-09-19",
       readTime: "5 min read",
       author: "Atharva Kakade",
@@ -24,7 +24,7 @@ const BlogsSection = () => {
       title: "Java 25: A Deep Dive into the Latest LTS Release",
       excerpt:
         "Java 25 marks a landmark LTS release, simplifying syntax, introducing scoped values, boosting performance with AOT compilation, and strengthening security with PEM support—all supported until 2028.",
-      image: "/public/images/Gemini_Generated_Image_lqbctclqbctclqbc.png",
+      image: "/images/Gemini_Generated_Image_lqbctclqbctclqbc.png",
       date: "2024-09-15", // adjust to your actual publish date
       readTime: "15 min read",
       author: "Atharva Kakade",

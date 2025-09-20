@@ -55,7 +55,7 @@ const Skills = () => {
       name: "Hibernate",
       icon: (
         <img
-          src="src/assets/images/Hibernate.svg"
+          src="/images/Hibernate.svg"
           alt="Jenkins"
           className="w-5 h-6"
         />
@@ -82,7 +82,7 @@ const Skills = () => {
       name: "Jenkins",
       icon: (
         <img
-          src="src/assets/images/Jenkins_logo.svg"
+          src="/images/Jenkins_logo.svg"
           alt="Jenkins"
           className="w-5 h-6"
         />

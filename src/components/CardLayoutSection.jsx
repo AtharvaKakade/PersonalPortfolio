@@ -489,7 +489,7 @@ const CardLayoutSection = () => {
 
             {/* Image fixed at bottom as background */}
             <img
-              src="public\images\global.jpg"
+              src="\images\global.jpg"
               alt="global"
               className="absolute bottom-0 left-0 w-full h-1/2 object-cover rounded-b-xl"
               style={{
@@ -542,7 +542,7 @@ const CardLayoutSection = () => {
             {/* Enhanced image blending */}
             <div className="absolute bottom-0 left-0 w-full h-1/2">
               <img
-                src="public/images/lanscape_perspective_grid.jpg"
+                src="/images/lanscape_perspective_grid.jpg"
                 alt="blended"
                 className="absolute inset-0 w-full h-full object-cover rounded-b-xl"
                 style={{
@@ -796,7 +796,7 @@ const CardLayoutSection = () => {
               </button>
             </div>
             <img
-              src="public\images\global.jpg"
+              src="\images\global.jpg"
               alt="global"
               className="absolute bottom-0 left-0 w-full h-1/3 object-cover rounded-b-xl"
               style={{
@@ -846,7 +846,7 @@ const CardLayoutSection = () => {
               </div>
             </div>
             <img
-              src="src/assets/images/lanscape_perspective_grid.jpg"
+              src="/images/lanscape_perspective_grid.jpg"
               alt="blended"
               className="absolute bottom-0 left-0 w-full h-1/3 object-cover rounded-b-xl shadow-[inset_0_0_15px_#003566]"
               style={{

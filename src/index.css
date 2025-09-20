@@ -7,6 +7,6 @@
   --font-serif: "Cormorant Garamond", serif;
   --font-bebas: 'Bebas Neue', sans-serif;
 }
-html, body {
+html {
   overflow-x: hidden;
 }

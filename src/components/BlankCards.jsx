@@ -488,7 +488,7 @@ const BlankCards = () => {
 
             {/* Image fixed at bottom as background */}
             <img
-              src="src/assets/images/global.jpg"
+              src="public\images\global.jpg"
               alt="global"
               className="absolute bottom-0 left-0 w-full h-1/2 object-cover rounded-b-xl"
               style={{
@@ -628,8 +628,9 @@ const BlankCards = () => {
              bg-[#001D3D]/80 bg-cover bg-center bg-blend-darken 
              hover:animate-[blink_1s_infinite] hover:scale-101 transition-transform duration-300 overflow-hidden"
             style={{
-              backgroundImage: "url('src/assets/images/clothbg.jpg')",
-            }}
+  backgroundImage: "url('/images/clothbg.jpg')",
+}}
+
           >
             {/* Optional stronger gradient for depth */}
             <div className="absolute inset-0 bg-gradient-to-br from-[#1c1a73]/30 to-[#000000]/60 rounded-xl mix-blend-multiply"></div>

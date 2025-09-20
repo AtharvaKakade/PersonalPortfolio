@@ -1,5 +1,6 @@
 import React from "react";
 import { ArrowUpRight, Calendar, Clock, User, Tag } from "lucide-react";
+import GalaxyBackground from "./GalaxyBackground";
 
 const BlogsSection = () => {
   const blogs = [
@@ -8,7 +9,7 @@ const BlogsSection = () => {
       title: "Building Scalable REST APIs with Spring Boot",
       excerpt:
         "Learn how to design and implement robust REST APIs using Spring Boot, including best practices for authentication, validation, and error handling that ensure your backend can scale efficiently.",
-      image: "src/assets/images/Gemini_Generated_Image_8kotyh8kotyh8kot.png",
+      image: "public/images/Gemini_Generated_Image_8kotyh8kotyh8kot.png",
       date: "2025-09-19",
       readTime: "5 min read",
       author: "Atharva Kakade",
@@ -23,7 +24,7 @@ const BlogsSection = () => {
       title: "Java 25: A Deep Dive into the Latest LTS Release",
       excerpt:
         "Java 25 marks a landmark LTS release, simplifying syntax, introducing scoped values, boosting performance with AOT compilation, and strengthening security with PEM support—all supported until 2028.",
-      image: "src/assets/images/Gemini_Generated_Image_lqbctclqbctclqbc.png",
+      image: "/public/images/Gemini_Generated_Image_lqbctclqbctclqbc.png",
       date: "2024-09-15", // adjust to your actual publish date
       readTime: "15 min read",
       author: "Atharva Kakade",
@@ -52,8 +53,9 @@ const BlogsSection = () => {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white py-20 px-6">
-      <div className="max-w-7xl mx-auto">
+    <div className="relative min-h-screen bg-black text-white py-20 px-6">
+      <GalaxyBackground/>
+      <div className="relative max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent mb-3 pb-2">

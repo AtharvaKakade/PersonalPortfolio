@@ -14,6 +14,7 @@ import Footer from "./components/Footer";
 import Projects from "./components/Projects";
 import BlogsSection from "./components/BlogsSection";
 import ScrollToTop from "./components/ScrollToTop";
+import CardLayoutSection from "./components/CardLayoutSection";
 
 function App() {
   return (
@@ -28,8 +29,9 @@ function App() {
               <>
                 <Banner />
                 {/* <About /> */}
-                <BlankCards />
+                <CardLayoutSection />
                 <Skills />
+                
               </>
             }
           />

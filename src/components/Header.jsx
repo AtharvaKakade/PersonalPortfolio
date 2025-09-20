@@ -77,9 +77,10 @@ const Header = () => {
             >
               Projects
             </NavLink>
-            <a className={linkClasses} onClick={toggleMenu}>
-              More
-            </a>
+            <a className="pr-3 pl-4" onClick={() => setIsModalOpen(true)}>
+            More
+          </a>
+        <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
           </div>
         </div>
       )}

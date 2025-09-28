@@ -30,7 +30,10 @@ function App() {
                 <Banner />
                 {/* <About /> */}
                 <CardLayoutSection />
+                <Experience/>
+                <Projects/>
                 <Skills />
+                
                 
               </>
             }

@@ -1,6 +1,10 @@
 import { Download } from "lucide-react";
+import SplitText from "./SplitText";
 
 const Banner = () => {
+  const handleAnimationComplete = () => {
+    console.log("All letters have animated!");
+  };
   return (
     <>
       <section className="bg-[#000000] py-32 relative overflow-hidden h-screen">
@@ -91,13 +95,20 @@ const Banner = () => {
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
-            <p className="text-xl mb-4 text-[#FFD60A] transform transition-all duration-500 hover:scale-90 hover:text-white">
-              Hello, I'm Atharva
-              <span className="inline-block ml-2 mr-2 animate-wave origin-[70%_70%]">
-                👋
-              </span>
-              a Full Stack Developer
-            </p>
+            <SplitText
+              text="Hello, I'm Atharva👋 a Full Stack Developer"
+              className="text-xl mb-4 text-[#FFD60A] transform transition-all duration-500 hover:scale-90 hover:text-white"
+              delay={100}
+              duration={0.6}
+              ease="power3.out"
+              splitType="chars"
+              from={{ opacity: 0, y: 40 }}
+              to={{ opacity: 1, y: 0 }}
+              threshold={0.1}
+              rootMargin="-100px"
+              textAlign="center"
+              onLetterAnimationComplete={handleAnimationComplete}
+            />
 
             <h1 className="text-6xl font-bold mb-6 transform transition-all duration-700 hover:scale-95">
               <span className="text-[#FFC300] transition-colors duration-300 hover:text-white ">

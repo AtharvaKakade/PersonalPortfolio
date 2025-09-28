@@ -108,7 +108,7 @@ const Projects = () => {
 
       {/* Title */}
       <div className="relative flex justify-center text-center">
-        <div className="pb-12">
+        <div className="pb-12 px-2">
           <h2 className="text-gray-500 text-xl font-semibold py-6 tracking-widest">
             PROJECTS
           </h2>

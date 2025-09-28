@@ -15,6 +15,8 @@ import Projects from "./components/Projects";
 import BlogsSection from "./components/BlogsSection";
 import ScrollToTop from "./components/ScrollToTop";
 import CardLayoutSection from "./components/CardLayoutSection";
+import ExperiencePage from "./pages/ExperiencePage";
+import ProjectsPage from "./pages/ProjectsPage";
 
 function App() {
   return (
@@ -30,8 +32,8 @@ function App() {
                 <Banner />
                 {/* <About /> */}
                 <CardLayoutSection />
-                <Experience/>
-                <Projects/>
+                <ExperiencePage/>
+                <ProjectsPage/>
                 <Skills />
                 
                 
@@ -39,8 +41,8 @@ function App() {
             }
           />
           <Route path="/about" element={<About />} />
-          <Route path="/exp" element={<Experience />} />
-          <Route path="/projects" element={<Projects />} />
+          <Route path="/exp" element={<ExperiencePage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/blogs" element={<BlogsSection />} />
         </Routes>
         <Footer />

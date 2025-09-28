@@ -21,12 +21,12 @@ const Header = () => {
     <header className="sticky top-0 z-50 backdrop-blur-[2px] bg-black/50">
       <div className="container mx-auto px-4 py-6 flex flex-col md:flex-row items-center md:justify-center relative">
         {/* Logo */}
-        {/* <NavLink
+        <NavLink
           to="/"
-          className="absolute left-4 md:static text-3xl font-bebas font-extrabold text-white"
+          className="md:hidden absolute left-4 text-3xl font-bebas font-extrabold bg-gradient-to-r from-[#000814] via-[#001D3D] via-[#003566] via-[#FFC300] via-[#FFD60A] to-[#000814] bg-[length:300%_300%] animate-gradient-text text-transparent bg-clip-text"
         >
           A K
-        </NavLink> */}
+        </NavLink>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center bg-gray-700/20 rounded-full px-3 py-2 border-[0.5px] border-gray-700 shadow-[inset_0_0_6px_rgba(255,255,255,0.3)] space-x-2">
@@ -78,9 +78,9 @@ const Header = () => {
               Projects
             </NavLink>
             <a className="pr-3 pl-4" onClick={() => setIsModalOpen(true)}>
-            More
-          </a>
-        <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+              More
+            </a>
+            <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
           </div>
         </div>
       )}

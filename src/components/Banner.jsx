@@ -1,10 +1,12 @@
 import { Download } from "lucide-react";
 import SplitText from "./SplitText";
 
+
 const Banner = () => {
   const handleAnimationComplete = () => {
     console.log("All letters have animated!");
   };
+
   return (
     <>
       <section className="bg-[#000000] py-32 relative overflow-hidden h-screen">
@@ -125,6 +127,7 @@ const Banner = () => {
               </span>{" "}
               <span className="text-white">!</span>
             </h1>
+
 
             <p className="text-xl mb-10 text-gray-300 max-w-2xl mx-auto transition-all duration-300 hover:text-white">
               With passion, love, and enthusiasm for technology, I embrace

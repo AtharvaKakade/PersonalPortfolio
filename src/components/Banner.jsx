@@ -1,7 +1,6 @@
 import { Download } from "lucide-react";
 import SplitText from "./SplitText";
 
-
 const Banner = () => {
   const handleAnimationComplete = () => {
     console.log("All letters have animated!");

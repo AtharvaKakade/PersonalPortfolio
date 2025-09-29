@@ -1,13 +1,17 @@
 import React from "react";
 import { Linkedin, Github } from "lucide-react";
 import GalaxyBackground from "./GalaxyBackground";
+import TargetCursor from './TargetCursor';
+import Intrests from "./Intrests";
+
 
 const About = () => {
   return (
     <section className="min-h-screen relative text-white py-20 flex flex-col items-center px-6 md:px-20 ">
       {/* Heading */}
       <GalaxyBackground />
-      <div className=" relative max-w-5xl w-full flex flex-col md:flex-row items-center gap-12">
+      <TargetCursor/>
+      <div className="relative max-w-5xl w-full flex flex-col md:flex-row items-center gap-12">
         {/* Left Content */}
         <div className="flex-1">
           <p className="text-sm uppercase tracking-widest text-gray-400">
@@ -23,7 +27,7 @@ const About = () => {
               href="https://haptiq.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-5xl md:text-5xl px-1 bg-clip-text text-transparent font-serif font-extrabold italic "
+              className="cursor-target text-5xl md:text-5xl px-1 bg-clip-text text-transparent font-serif font-extrabold italic "
               style={{
                 backgroundImage:
                   "linear-gradient(270deg, #3b82f6, #ec4899, #ef4444, #facc15)", // blue → pink → red → yellow
@@ -65,7 +69,7 @@ const About = () => {
               href="https://linkedin.com/in/atharvaKakade"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-white transition"
+              className="hover:text-white transition "
             >
               <Linkedin size={20} />
             </a>
@@ -90,7 +94,7 @@ const About = () => {
         </style>
 
         {/* Right Content (Image Card) */}
-        <div className="flex-1 flex flex-col items-center">
+        <div className="cursor-target flex-1 flex flex-col items-center">
           <div className="relative w-64 h-80 rounded-2xl overflow-hidden shadow-lg">
             <img
               src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80"

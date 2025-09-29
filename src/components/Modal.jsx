@@ -2,6 +2,18 @@ import React, { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Modal = ({ isOpen, onClose, children }) => {
+  const items = [
+    {
+      title:"Blog",
+      description: "Latest thoughts and insights",
+      path: "/blogs"
+    },
+    {
+      title:"Hobbies & Interests",
+      description: "Passions that inspire creativity and balance",
+      path: "/interests"
+    }
+  ]
   const modalRef = useRef(null);
   const navigate = useNavigate();
   useEffect(() => {
@@ -47,9 +59,51 @@ const Modal = ({ isOpen, onClose, children }) => {
           </div>
 
           {/* Content */}
-          <div className="p-4">
+          <div className="p-4 flex flex-col gap-2">
             {/* Blog Card */}
-            <div className="bg-gray-800/50 rounded-lg p-4 border border-gray-700/30 hover:bg-gray-800/70 transition-all duration-200 hover:scale-[1.02] group cursor-pointer">
+            {items.map((item)=>{
+              return(
+                <div className="bg-gray-800/50 rounded-lg p-4 border border-gray-700/30 hover:bg-gray-800/70 transition-all duration-200 hover:scale-[1.02] group cursor-pointer">
+              <div className="flex items-center space-x-3">
+                <div className="w-10 h-10 bg-blue-600/20 rounded-lg flex items-center justify-center group-hover:bg-blue-600/30 transition-colors">
+                  <svg
+                    className="w-5 h-5 text-blue-400"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"
+                    />
+                  </svg>
+                </div>
+                <div onClick={() => navigate(item.path)} className="flex-1">
+                  <h3 className="text-white font-medium text-sm">{item.title}</h3>
+                  <p className="text-gray-400 text-xs">
+                    {item.description}
+                  </p>
+                </div>
+                <svg
+                  className="w-4 h-4 text-gray-500 group-hover:text-gray-300 transition-colors"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </div>
+            </div>
+              )
+            })}
+            {/* <div className="bg-gray-800/50 rounded-lg p-4 border border-gray-700/30 hover:bg-gray-800/70 transition-all duration-200 hover:scale-[1.02] group cursor-pointer">
               <div className="flex items-center space-x-3">
                 <div className="w-10 h-10 bg-blue-600/20 rounded-lg flex items-center justify-center group-hover:bg-blue-600/30 transition-colors">
                   <svg
@@ -86,7 +140,7 @@ const Modal = ({ isOpen, onClose, children }) => {
                   />
                 </svg>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

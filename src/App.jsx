@@ -17,6 +17,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import CardLayoutSection from "./components/CardLayoutSection";
 import ExperiencePage from "./pages/ExperiencePage";
 import ProjectsPage from "./pages/ProjectsPage";
+import IntrestsPage from "./pages/IntrestsPage";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             element={
               <>
                 <Banner />
+                {/* <BlankCards/> */}
                 {/* <About /> */}
                 <CardLayoutSection />
                 <ExperiencePage/>
@@ -44,6 +46,8 @@ function App() {
           <Route path="/exp" element={<ExperiencePage />} />
           <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/blogs" element={<BlogsSection />} />
+          <Route path="/interests" element={<IntrestsPage />} />
+
         </Routes>
         <Footer />
       </BrowserRouter>

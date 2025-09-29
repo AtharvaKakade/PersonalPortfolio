@@ -2,6 +2,7 @@ import React from "react";
 import GalaxyBackground from "./GalaxyBackground";
 import { ArrowUpRight } from "lucide-react";
 import { motion } from "framer-motion";
+import ScrollStack, { ScrollStackItem } from './ScrollStack'
 
 const Projects = () => {
   const projects = [

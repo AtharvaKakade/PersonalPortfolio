@@ -278,7 +278,7 @@ const CardLayoutSection = () => {
   return (
     <div className="relative">
       <GalaxyBackground />
-      <div className="w-full h-full relative cursor-crosshair flex items-center justify-center py-5 px-4 md:px-0">
+      <div className="w-full h-full relative flex items-center justify-center py-5 px-4 md:px-0">
         {/* Desktop Layout (lg and above) */}
         <div className="hidden lg:grid w-[1200px] h-[1200px] grid-cols-5 grid-rows-5 gap-5 bg-[#000814]">
           {/* Exploring section */}

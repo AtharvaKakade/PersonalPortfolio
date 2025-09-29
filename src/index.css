@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Outfit:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&display=swap');
+
 
 @theme {
   --font-sans: "Outfit", sans-serif;
   --font-serif: "Cormorant Garamond", serif;
   --font-bebas: 'Bebas Neue', sans-serif;
+  --font-cinzel: "Cinzel Decorative", serif;
 }
 html {
   overflow-x: hidden;
@@ -19,4 +22,21 @@ html {
 
 .animate-gradient-text {
   animation: gradient-text 6s ease infinite;
+}
+
+.content__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;      /* poster-like width */
+  height: 300px;     /* poster-like height */
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.content__img-inner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* keep poster proportions */
+  display: block;
 }
